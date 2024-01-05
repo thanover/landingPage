@@ -1,42 +1,44 @@
 const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
-    let metadata = await Image(src, {
-      widths: [200],
-      formats: ["avif", "jpeg", "jpg"],
-      outputDir: "_site/img",
-    });
+  eleventyConfig.addShortcode(
+    "image",
+    async function (classes, src, alt, sizes) {
+      let metadata = await Image(src, {
+        widths: [300],
+        formats: ["avif", "jpeg", "jpg"],
+        outputDir: "_site/img",
+      });
 
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
+      let imageAttributes = {
+        class: classes,
+        alt,
+        sizes,
+        loading: "lazy",
+        decoding: "async",
+      };
 
-    // You bet we throw an error on a missing alt (alt="" works okay)
-    return Image.generateHTML(metadata, imageAttributes);
-  });
+      // You bet we throw an error on a missing alt (alt="" works okay)
+      return Image.generateHTML(metadata, imageAttributes);
+    }
+  );
 
-  // eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("src/linkIcons");
 
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid
-    templateFormats: ["md", "html", "liquid"],
+    templateFormats: ["md", "html", "njk"],
 
     // Pre-process *.md files with: (default: `liquid`)
-    // markdownTemplateEngine: "njk",
+    markdownTemplateEngine: "njk",
 
     // Pre-process *.html files with: (default: `liquid`)
-    // htmlTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
 
     // These are all optional:
     dir: {
       input: "src", // default: "."
-      includes: "../_includes", // default: "_includes"
-      data: "../_data", // default: "_data"
       output: "_site",
     },
 

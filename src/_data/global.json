@@ -1,0 +1,22 @@
+{
+  "pageTitle": "Tom Hanover",
+  "pageDescription": "Software Engineer",
+  "stackLinks": [
+    {
+      "text": "Blog",
+      "iconPath": "linkIcons/blog.svg"
+    },
+    {
+      "text": "GitHub",
+      "iconPath": "linkIcons/github.svg"
+    },
+    {
+      "text": "Projects",
+      "iconPath": "linkIcons/project.svg"
+    },
+    {
+      "text": "LinkedIn",
+      "iconPath": "linkIcons/linkedin.svg"
+    }
+  ]
+}

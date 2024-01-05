@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <body>
+    <header></header>
+    <main class="h-screen w-screen flex flex-col bg-cyan-900">
+      <div class="flex flex-col text-slate-200">
+        <div class="flex justify-center p-10 w-full max-w-20">
+          {% image "rounded-full", "src/images/profile_image.jpg", "profile picture" %}
+        </div>
+        <div class="flex justify-center">
+          <p class="text-4xl">{{ global.pageTitle }}</p>
+        </div>
+        <div class="flex justify-center p-4">
+          <p class="text-sm">{{ global.pageDescription }}</p>
+        </div>
+        <div class="flex justify-center p-10">
+          {% include "stackLinks.njk" %}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<html></html>

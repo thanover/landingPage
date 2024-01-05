@@ -1,17 +1,54 @@
 <!doctype html>
 <html lang="en">
-
-<body>
-  <header>
-    </header>
-    <main>
-    Tom Hanover
-    <picture><source type="image/avif" srcset="/img/yO3M3vnNBa-200.avif 200w"><img alt="profile picture" loading="lazy" decoding="async" src="/img/yO3M3vnNBa-200.jpeg" width="200" height="200"></picture>
-    
-  <li>link1</li>
-
-  <li>link2</li>
-
-  </main>
-</body>
-<html>
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <body>
+    <header></header>
+    <main class="h-screen w-screen flex flex-col bg-cyan-900">
+      <div class="flex flex-col text-slate-200">
+        <div class="flex justify-center p-10 w-full max-w-20">
+          <picture><source type="image/avif" srcset="/img/yO3M3vnNBa-300.avif 300w"><img class="rounded-full" alt="profile picture" loading="lazy" decoding="async" src="/img/yO3M3vnNBa-300.jpeg" width="300" height="300"></picture>
+        </div>
+        <div class="flex justify-center">
+          <p class="text-4xl">Tom Hanover</p>
+        </div>
+        <div class="flex justify-center p-4">
+          <p class="text-sm">Software Engineer</p>
+        </div>
+        <div class="flex justify-center p-10">
+          <ul>
+  
+    <li class="p4 flex align-middle justify-center">
+      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
+        <img class="fill-black stroke-black size-6" src="linkIcons/blog.svg"></img>
+        <p class="pl-2">Blog</p>
+      </div>
+    </li>
+  
+    <li class="p4 flex align-middle justify-center">
+      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
+        <img class="fill-black stroke-black size-6" src="linkIcons/github.svg"></img>
+        <p class="pl-2">GitHub</p>
+      </div>
+    </li>
+  
+    <li class="p4 flex align-middle justify-center">
+      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
+        <img class="fill-black stroke-black size-6" src="linkIcons/project.svg"></img>
+        <p class="pl-2">Projects</p>
+      </div>
+    </li>
+  
+    <li class="p4 flex align-middle justify-center">
+      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
+        <img class="fill-black stroke-black size-6" src="linkIcons/linkedin.svg"></img>
+        <p class="pl-2">LinkedIn</p>
+      </div>
+    </li>
+  
+</ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<html></html>
