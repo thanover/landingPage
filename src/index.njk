@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <body>
+    <header></header>
+    <main class="h-screen w-screen flex flex-col bg-cyan-900 font-SourceCodePro">
+      <div class="flex flex-col text-slate-200 max-w-screen-2xl">
+        <div class="flex justify-center p-10 w-full ">
+          {% image "rounded-full", "src/images/profile_image.jpg", "profile picture" %}
+        </div>
+        <div class="flex justify-center font-bold">
+          <p class="text-4xl">{{ global.pageTitle }}</p>
+        </div>
+        <div class="flex justify-center p-4">
+          <p class="text-sm">{{ global.pageDescription }}</p>
+        </div>
+        <div class="flex justify-center p-10">
+          {% include "stackLinks.njk" %}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<html></html>
