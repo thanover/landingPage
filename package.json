@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "npm-run-all -p dev:*",
-    "build": "run-s build:*",
+    "build": "rm -rf ./_site && run-s build:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/css/tailwind.css -o _site/css/tailwind.css --watch --postcss",
     "build:11ty": "eleventy",

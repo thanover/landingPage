@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="/css/tailwind.css">
   <body>
     <header></header>
-    <main class="h-screen w-screen flex flex-col bg-cyan-900">
-      <div class="flex flex-col text-slate-200">
-        <div class="flex justify-center p-10 w-full max-w-20">
-          <picture><source type="image/avif" srcset="/img/yO3M3vnNBa-300.avif 300w"><img class="rounded-full" alt="profile picture" loading="lazy" decoding="async" src="/img/yO3M3vnNBa-300.jpeg" width="300" height="300"></picture>
+    <main class="h-screen w-screen flex flex-col bg-cyan-900 font-SourceCodePro">
+      <div class="flex flex-col text-slate-200 max-w-screen-2xl">
+        <div class="flex justify-center p-10 w-full ">
+          <picture><source type="image/avif" srcset="/img/yO3M3vnNBa-200.avif 200w"><img class="rounded-full" alt="profile picture" loading="lazy" decoding="async" src="/img/yO3M3vnNBa-200.jpeg" width="200" height="200"></picture>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center font-bold">
           <p class="text-4xl">Tom Hanover</p>
         </div>
         <div class="flex justify-center p-4">
@@ -18,31 +23,25 @@
           <ul>
   
     <li class="p4 flex align-middle justify-center">
-      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
-        <img class="fill-black stroke-black size-6" src="linkIcons/blog.svg"></img>
-        <p class="pl-2">Blog</p>
-      </div>
+      <a href="https://github.com/thanover">
+        <button>
+          <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md rounded-lg hover:bg-cyan-600">
+            <img class="fill-black stroke-black size-6" src="linkIcons/github.svg"></img>
+            <p class="pl-2">GitHub</p>
+          </div>
+        </button>
+      </a>
     </li>
   
     <li class="p4 flex align-middle justify-center">
-      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
-        <img class="fill-black stroke-black size-6" src="linkIcons/github.svg"></img>
-        <p class="pl-2">GitHub</p>
-      </div>
-    </li>
-  
-    <li class="p4 flex align-middle justify-center">
-      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
-        <img class="fill-black stroke-black size-6" src="linkIcons/project.svg"></img>
-        <p class="pl-2">Projects</p>
-      </div>
-    </li>
-  
-    <li class="p4 flex align-middle justify-center">
-      <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md">
-        <img class="fill-black stroke-black size-6" src="linkIcons/linkedin.svg"></img>
-        <p class="pl-2">LinkedIn</p>
-      </div>
+      <a href="https://www.linkedin.com/in/tomhanover/">
+        <button>
+          <div class="flex align-middle justify-center m-2 p-2 w-80 bg-cyan-700 shadow-md rounded-lg hover:bg-cyan-600">
+            <img class="fill-black stroke-black size-6" src="linkIcons/linkedin.svg"></img>
+            <p class="pl-2">LinkedIn</p>
+          </div>
+        </button>
+      </a>
     </li>
   
 </ul>

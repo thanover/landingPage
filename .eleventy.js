@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
     "image",
     async function (classes, src, alt, sizes) {
       let metadata = await Image(src, {
-        widths: [300],
+        widths: [200],
         formats: ["avif", "jpeg", "jpg"],
         outputDir: "_site/img",
       });
