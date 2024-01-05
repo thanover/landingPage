@@ -4,13 +4,22 @@
   "description": "Landing Page for tomhanover.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
+    "serve": "npx @11ty/eleventy --serve --quiet",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+    "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
+    "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thanover/LandingPage.git"
   },
-  "author": "Tom Hanover",
+  "author": {
+    "name": "Tom Hanover",
+    "email": "thomas.hanover@gmail.com",
+    "url": "https://tomhanover.com/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thanover/LandingPage/issues"
@@ -18,5 +27,8 @@
   "homepage": "https://github.com/thanover/LandingPage#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^3.1.8"
   }
 }
