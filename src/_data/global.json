@@ -11,28 +11,18 @@
       "text": "LinkedIn",
       "iconPath": "linkIcons/linkedin.svg",
       "link": "https://www.linkedin.com/in/tomhanover/"
-    }
-  ],
-  "nothing": [
+    },
     {
       "text": "Blog",
       "iconPath": "linkIcons/blog.svg",
-      "link": "https://tomhanover.com/blog"
-    },
-    {
-      "text": "GitHub",
-      "iconPath": "linkIcons/github.svg",
-      "link": "https://github.com/thanover"
-    },
+      "link": "https://blog.tomhanover.com"
+    }
+  ],
+  "comingSoon": [
     {
       "text": "Projects",
       "iconPath": "linkIcons/project.svg",
       "link": "https://tomhanover.com/projects"
-    },
-    {
-      "text": "LinkedIn",
-      "iconPath": "linkIcons/linkedin.svg",
-      "link": "https://www.linkedin.com/in/tomhanover/"
     }
   ]
 }
