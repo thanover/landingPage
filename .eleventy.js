@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
     "image",
     async function (classes, src, alt, sizes) {
       let metadata = await Image(src, {
-        widths: [200],
+        widths: [600],
         formats: ["avif", "jpeg", "jpg"],
         outputDir: "_site/img",
       });
@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   );
 
   eleventyConfig.addPassthroughCopy("src/linkIcons");
-
+  eleventyConfig.addPassthroughCopy({ "src/favicon": "." });
   return {
     // Control which files Eleventy will process
     // e.g.: *.md, *.njk, *.html, *.liquid

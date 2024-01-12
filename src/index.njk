@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap"
-    rel="stylesheet"/>
-  <link rel="stylesheet" href="/css/tailwind.css"/>
-  <body class="flex-row h-screen w-screen bg-gradient-to-r from-cyan-700 to-sky-900 text-slate-200 font-SourceCodePro">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,700;1,800&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/tailwind.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>{{ global.pageTitle }}</title>
+  </head>
+  <body class="h-screen w-screen bg-gradient-to-r from-cyan-700 to-sky-900 text-slate-200 font-SourceCodePro">
     <div class="flex justify-center p-6">
-      {% image "rounded-full w-54 sm:w-36",
+      {% image "rounded-full flex w-56 content-center justify-center",
     "src/images/profile_image.jpg", "profile picture" %}
     </div>
-    <div class="flex justify-center grow">
+    <div class="flex justify-center">
       <p class="font-bold text-4xl sm:text-3xl">
         {{ global.pageTitle }}
       </p>
@@ -21,17 +32,15 @@
         {{ global.pageSubtitle }}
       </p>
     </div>
-    <div class="flex-col">
-      {% for stackLink in global.stackLinks %}
-        <div class="flex justify-center ">
-          <a class="w-1/2 sm:w-64 flex justify-center items-center m-3 p-3 sm:p-2 sm:m-2 bg-cyan-700 shadow-lg rounded-lg hover:bg-cyan-600" href="{{ stackLink.link }}">
-            <img class="fill-black stroke-black size-8 sm:size-6" src="{{ stackLink.iconPath }}"/>
-            <p class="pl-4 text-lg sm:text-base">
-              {{ stackLink.text }}
-            </p>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
+    {% for stackLink in global.stackLinks %}
+      <div class="flex justify-center ">
+        <a class="w-1/2 sm:w-64 flex justify-center items-center m-3 p-3 sm:p-2 sm:m-2 bg-cyan-700 shadow-lg rounded-lg hover:bg-cyan-600" href="{{ stackLink.link }}">
+          <img class="fill-black stroke-black size-8 sm:size-6" src="{{ stackLink.iconPath }}"/>
+          <p class="pl-4 text-lg sm:text-base">
+            {{ stackLink.text }}
+          </p>
+        </a>
+      </div>
+    {% endfor %}
   </body>
 </html>
