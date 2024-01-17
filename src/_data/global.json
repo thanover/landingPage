@@ -1,7 +1,7 @@
 {
-  "pageTitle": "Thomas Hanover",
-  "pageSubtitle": "DevOps Engineer",
-  "stackLinks": [
+  "name": "Thomas Hanover",
+  "tags": "DevOps Engineer",
+  "links": [
     {
       "text": "GitHub",
       "iconPath": "linkIcons/github.svg",

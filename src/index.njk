@@ -15,7 +15,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ global.pageTitle }}</title>
+    <title>{{ global.name }}</title>
   </head>
   <body class="h-screen w-screen bg-gradient-to-r from-cyan-700 to-sky-900 text-slate-200 font-SourceCodePro">
     <div class="flex justify-center p-6">
@@ -24,20 +24,20 @@
     </div>
     <div class="flex justify-center">
       <p class="font-bold text-4xl sm:text-3xl">
-        {{ global.pageTitle }}
+        {{ global.name }}
       </p>
     </div>
     <div class="flex justify-center">
       <p class="text-base sm:text-sm pb-10">
-        {{ global.pageSubtitle }}
+        {{ global.tags }}
       </p>
     </div>
-    {% for stackLink in global.stackLinks %}
-      <div class="flex justify-center ">
+    {% for link in global.links %}
+      <div class="flex justify-center">
         <a class="w-1/2 sm:w-64 flex justify-center items-center m-3 p-3 sm:p-2 sm:m-2 bg-cyan-700 shadow-lg rounded-lg hover:bg-cyan-600" href="{{ stackLink.link }}">
-          <img class="fill-black stroke-black size-8 sm:size-6" src="{{ stackLink.iconPath }}"/>
+          <img class="fill-black stroke-black size-8 sm:size-6" src="{{ link.iconPath }}"/>
           <p class="pl-4 text-lg sm:text-base">
-            {{ stackLink.text }}
+            {{ link.text }}
           </p>
         </a>
       </div>
