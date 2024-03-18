@@ -18,9 +18,9 @@
     <title>{{ global.name }}</title>
   </head>
   {# <body class="h-screen w-screen bg-gradient-to-r from-{{ global.style.gradientLeft }} to-{{ global.style.gradientRight }}
-        text-slate-200 font-SourceCodePro"> #}
+          text-slate-200 font-SourceCodePro"> #}
   <body class="h-screen w-screen bg-gradient-to-r from-cyan-700 to-sky-900
-            text-slate-200 font-SourceCodePro">
+                  text-slate-200 font-SourceCodePro">
     <div class="flex justify-center p-6">
       {% image "rounded-full flex w-56 content-center justify-center",
     "src/images/profile_image3.jpeg", "profile picture" %}
@@ -37,7 +37,7 @@
     </div>
     {% for link in global.links %}
       <div class="flex justify-center">
-        <a class="w-1/2 sm:w-64 flex justify-center items-center m-3 p-3 sm:p-2 sm:m-2 bg-cyan-700 shadow-lg rounded-lg hover:bg-cyan-600" href="{{ stackLink.link }}">
+        <a class="w-1/2 sm:w-64 flex justify-center items-center m-3 p-3 sm:p-2 sm:m-2 bg-cyan-700 shadow-lg rounded-lg hover:bg-cyan-600" href="{{ link.link }}">
           <img class="fill-black stroke-black size-8 sm:size-6" src="{{ link.iconPath }}"/>
           <p class="pl-4 text-lg sm:text-base">
             {{ link.text }}
