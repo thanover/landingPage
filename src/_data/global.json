@@ -3,9 +3,9 @@
   "tags": "DevOps Engineer",
   "links": [
     {
-      "text": "GitHub",
-      "iconPath": "linkIcons/github.svg",
-      "link": "https://github.com/thanover"
+      "text": "Resume",
+      "iconPath": "linkIcons/resume.svg",
+      "link": "https://rxresu.me/thomas.hanover/sr-cloud-eng"
     },
     {
       "text": "LinkedIn",
@@ -13,16 +13,20 @@
       "link": "https://www.linkedin.com/in/tomhanover/"
     },
     {
-      "text": "Blog",
-      "iconPath": "linkIcons/blog.svg",
-      "link": "https://blog.tomhanover.com"
+      "text": "GitHub",
+      "iconPath": "linkIcons/github.svg",
+      "link": "https://github.com/thanover"
     }
   ],
   "toBeAdded": [
     {
       "text": "Projects",
-      "iconPath": "linkIcons/project.svg",
+      "iconPath": "linkIcons/resume.svg",
       "link": "https://projects.tomhanover.com"
     }
-  ]
+  ],
+  "style": {
+    "gradientLeft": "cyan-700",
+    "gradientRight": "sky-900"
+  }
 }

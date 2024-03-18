@@ -9,7 +9,7 @@
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/css/tailwind.css -o _site/css/tailwind.css --watch --postcss",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/css/tailwind.css -o _site/css/tailwind.css --postcss --minify",
+    "build:css": "tailwindcss -i src/css/tailwind.css -o _site/css/tailwind.css --postcss",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
     "debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
     "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy"
